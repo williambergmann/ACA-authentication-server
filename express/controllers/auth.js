@@ -1,5 +1,4 @@
 const crypto = require('crypto')
-const mongoose = require('mongoose')
 const { AuthModel } = require('../../mongo/models')
 
 const SignUp = ({ userName, password }) => {

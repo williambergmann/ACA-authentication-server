@@ -19,7 +19,7 @@ class App extends Component {
   componentDidMount() {
     const cookies = cookie.parse(document.cookie)
     if (cookies.id_token) {
-      const payload = jwt.verify(cookies.id_token, 'secret')
+      const payload = jwt.verify(cookies.id_token, 'senpai')
       this.props.setUser(payload._doc)
     }
   }

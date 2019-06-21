@@ -13,7 +13,7 @@ export function login({ userName, password }) {
     })
     .then(res => {
       document.cookie = `id_token=${res.data};max-age=300;`
-      const payload = jwt.verify(res.data, 'secret')
+      const payload = jwt.verify(res.data, 'senpai')
       dispatch({
         type: 'LOGIN',
         value: payload._doc
